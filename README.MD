@@ -25,23 +25,23 @@ Once you're ok with the query, please click on EXECUTE to run the query, the dat
 Please set `DYNAMODB_ENDPOINT` to your local dynamodb and restart the app, then choose environment to query it against local dynamodb.
 
 # Screenshots
-
-![](doc/Screenshot1.png?raw=true | width=100)
-
-![](doc/Screenshot2.png?raw=true | width=100)
-
-![](doc/Screenshot3.png?raw=true | width=100)
-
-![](doc/Screenshot4.png?raw=true | width=100)
-
-![](doc/Screenshot5.png?raw=true | width=100)
-
-![](doc/Screenshot6.png?raw=true | width=100)
-
-![](doc/Screenshot7.png?raw=true | width=100)
-
-![](doc/Screenshot8.png?raw=true | width=100)
-
-![](doc/Screenshot9.png?raw=true | width=100)
-
-![](doc/Screenshot10.png?raw=true | width=100)
+### Select table and click Scan to scan table
+![](doc/Screenshot1.png)
+### Select table and click Scheme tab to see table's metadata like Key Schema, Second Global Index, Second Local Index...
+![](doc/Screenshot2.png)
+### Select table, then on Simple tab, choose prepopulated primary keys to begin querying. Primary keys are prepopulated from table's indexes
+![](doc/Screenshot3.png)
+### After chose primary key, click QUERY to load data from DynamoDB
+![](doc/Screenshot4.png)
+### You can also filter table's names by search box on the top left
+![](doc/Screenshot5.png)
+### In order to view whole row data, click on a row
+![](doc/Screenshot6.png)
+### Click on any column's header menu to start filtering row
+![](doc/Screenshot7.png)
+### Or click on column to sort
+![](doc/Screenshot8.png)
+### Click on COLUMNS menu to show/hide any columns in data view
+![](doc/Screenshot9.png)
+### Using code editor to craft any complex query with prepopulated JSON with instructions
+![](doc/Screenshot10.png)
