@@ -159,17 +159,9 @@ const querySlice = createSlice({
             const uniqueFields = [...new Set(fields)];
 
             const newColumnHeaders = uniqueFields.map((fieldName: string) => {
-              const isPrimary =
-                state.keys.findIndex((keySchema) => {
-                  return (
-                    keySchema.hash === fieldName ||
-                    keySchema.range === fieldName
-                  );
-                }) !== -1;
               return {
                 headerName: fieldName,
                 field: fieldName,
-                ...(isPrimary ? { pinned: 'left' } : {}),
               } as ColDef;
             });
             state.columnHeaders.forEach((col) => {

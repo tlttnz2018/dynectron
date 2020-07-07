@@ -29,7 +29,7 @@ Please set `DYNAMODB_ENDPOINT` to your local dynamodb and restart the app, then 
 ![](doc/Screenshot1.png)
 ### Select table and click Scheme tab to see table's metadata like Key Schema, Second Global Index, Second Local Index...
 ![](doc/Screenshot2.png)
-### Select table, then on Simple tab, choose prepopulated primary keys to begin querying. Primary keys are prepopulated from table's indexes
+### Select table, then on Simple tab, choose pre-populated primary keys to begin querying. Primary keys are prepopulated from table's indexes
 ![](doc/Screenshot3.png)
 ### After chose primary key, click QUERY to load data from DynamoDB
 ![](doc/Screenshot4.png)
@@ -43,5 +43,5 @@ Please set `DYNAMODB_ENDPOINT` to your local dynamodb and restart the app, then 
 ![](doc/Screenshot8.png)
 ### Click on COLUMNS menu to show/hide any columns in data view
 ![](doc/Screenshot9.png)
-### Using code editor to craft any complex query with prepopulated JSON with instructions
+### Using code editor to craft any complex query with pre-populated JSON with instructions
 ![](doc/Screenshot10.png)
