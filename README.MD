@@ -13,7 +13,7 @@ If you use any assume role for AWS authentication or using aws-vault, please rem
 
 Once you see the list of tables on the left, you can click on that table to see the selected table's schema in `SCHEMA` tab.
 
-For querying data, you can click on `QUERY` button to open query editor.
+For querying data, you can click on `Simple` tab to enter conditions or on `Code` to open query editor.
 
 You can either enter the table name in that query or omit it (it will use the selected one as table).
 
@@ -23,3 +23,25 @@ Once you're ok with the query, please click on EXECUTE to run the query, the dat
 
 # How to connect to local dynamodb
 Please set `DYNAMODB_ENDPOINT` to your local dynamodb and restart the app, then choose environment to query it against local dynamodb.
+
+# Screenshots
+
+![](doc/Screenshot1.png?raw=true | width=100)
+
+![](doc/Screenshot2.png?raw=true | width=100)
+
+![](doc/Screenshot3.png?raw=true | width=100)
+
+![](doc/Screenshot4.png?raw=true | width=100)
+
+![](doc/Screenshot5.png?raw=true | width=100)
+
+![](doc/Screenshot6.png?raw=true | width=100)
+
+![](doc/Screenshot7.png?raw=true | width=100)
+
+![](doc/Screenshot8.png?raw=true | width=100)
+
+![](doc/Screenshot9.png?raw=true | width=100)
+
+![](doc/Screenshot10.png?raw=true | width=100)
