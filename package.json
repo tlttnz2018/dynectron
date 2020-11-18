@@ -74,7 +74,7 @@
     "immutability-helper": "^3.1.1",
     "jsoneditor": "^9.0.1",
     "jsoneditor-react": "^3.0.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.20",
     "react": "^16.13.1",
     "react-ace": "^9.1.1",
     "react-dom": "^16.13.1",
