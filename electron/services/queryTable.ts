@@ -1,5 +1,6 @@
 import AWS from 'aws-sdk';
 import { DocumentClient } from 'aws-sdk/lib/dynamodb/document_client';
+import { runQuery } from './utils';
 
 export default async function queryTable({
   name,
@@ -21,6 +22,6 @@ export default async function queryTable({
     TableName: name,
   };
 
-  const items = await client.query({ ...params, ...query }).promise();
+  const items = await runQuery(client, { ...params, ...query });
   return items;
 }

@@ -17,6 +17,7 @@ function ControlBar({
   tableName,
   tables,
   keys,
+  loading,
 }: {
   tabNo: number;
   query: string;
@@ -42,12 +43,16 @@ function ControlBar({
   tableName: string;
   tables: string[];
   keys: KeySchema[];
+  loading: boolean;
 }) {
   return (
     <Container maxWidth={false} style={{ padding: 0 }}>
       <Button
         disabled={
-          _.isEmpty(query) || _.isEmpty(tables) || (tabNo === 0 && !tableName)
+          _.isEmpty(query) ||
+          _.isEmpty(tables) ||
+          (tabNo === 0 && !tableName) ||
+          loading
         }
         onClick={() => {
           queryData({
@@ -61,7 +66,7 @@ function ControlBar({
         Query
       </Button>
       <Button
-        disabled={_.isEmpty(tableName)}
+        disabled={_.isEmpty(tableName) || loading}
         onClick={() => {
           scanData({
             conditions: {
@@ -86,6 +91,7 @@ const mapStateToProps = (state) => ({
   tables: state.profile.tables,
   query: state.query.query,
   queryGenerated: state.queryGenerator.query,
+  loading: state.query.loading,
 });
 
 const mapDispatchToProps = {

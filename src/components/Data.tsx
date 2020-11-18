@@ -201,7 +201,7 @@ function Data({
                   });
                 }
               }}
-              disabled={!hasMore}
+              disabled={!hasMore || loading}
             >
               More
             </Button>
