@@ -69,7 +69,7 @@
     "ace-builds": "^1.4.11",
     "ag-grid-community": "^23.2.1",
     "ag-grid-react": "^23.2.1",
-    "aws-sdk": "^2.705.0",
+    "aws-sdk": "^2.1415.0",
     "brace": "^0.11.1",
     "immutability-helper": "^3.1.1",
     "jsoneditor": "^9.0.1",
